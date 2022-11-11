@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/f4cfc83812.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./images/f_107635246d8cb95b 1.png" alt="" />
+        <h2>Упрощенная проверка счётчиков</h2>
+      </div>
+
+      <div class="whats-up-number">
+        <i class="fa-brands fa-whatsapp"></i>
+        <a href="#">+ 7 (903) 722-00-75</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Прайс -->
+      <div class="price">
+        <div class="price__about">
+          <!-- Информация для клиента -->
+          <h1>
+            <span>10%</span> скидка <br />
+            постоянным <br />
+            клиентам!
+          </h1>
+          <p>
+            Упрощённая поверка счетчика <br />
+            реально СЭКОНОМИТ Ваше время!
+          </p>
+          <br />
+          <p>
+            Мы самостоятельно внесем все <br />
+            данные о поверке в систему “Аршин"!
+          </p>
+        </div>
+        <!-- Информация для клиента -->
+
+        <!-- Расценки -->
+        <div class="price__cost">
+          <h1>Цена: <span>498</span> руб/шт</h1>
+        </div>
+        <!-- Расценки -->
+
+        <div class="price__text">
+          <p>мы дорожим вашим временем!</p>
+        </div>
+      </div>
+      <!-- Прайс -->
+
+      <!-- Форма -->
+
+      <div class="form">
+        <h3>
+          Внимание! <br />
+          Сколько у вас счётчиков, столько и заявок.
+        </h3>
+
+        <form action="" class="form__content">
+          <!-- Номер телефона -->
+          <div class="form__content__label">
+            <p>Номер Вашего телефона для связи в Whatsapp <span>*</span></p>
+            <br />
+            <input type="text" id="phone" placeholder="+ 7 (903) 123-00-00" />
+          </div>
+
+          <!-- Серийный номер -->
+          <div class="form__content__label">
+            <p>Серийный номер счетчика <span>*</span></p>
+            <br />
+            <input
+              type="text"
+              id="serialNumber"
+              placeholder="Введите серийный номер"
+            />
+            <img src="./images/2 70721.png" alt="">
+          </div>
+
+          <!-- Название марки -->
+          <div class="form__content__label">
+            <p>Название марки счетчика <span>*</span></p>
+            <br />
+            <input
+              type="text"
+              id="brandName"
+              placeholder="Введите марку счетчика"
+            />
+            <img src="./images/pngwing 6.png" alt="">
+          </div>
+
+          <!-- Выбор типа трубы -->
+          <div class="form__content__label">
+            <p>Труба установки <span>*</span></p>
+            <div class="radio-input">
+              <input type="radio" class="radio" id="radio1" name="typeWater" />
+              <label for="radio1">Холодная</label>
+            </div>
+            <div class="radio-input">
+              <input type="radio" class="radio" id="radio2" name="typeWater" />
+              <label for="radio2">Горячая</label>
+            </div>
+          </div>
+
+          <!-- Информация об источнике -->
+          <div class="form__content__label">
+            <p>откуда вы о нас узнали?</p>
+            <br />
+            <input type="text" id="place" placeholder="Введите ответ" />
+          </div>
+
+          <div class="form__nessesary">
+            <h3><span>*</span> обязательно</h3>
+            <p>
+              Внесённые данные в Аршин не исправить – придётся оформлять новый
+              заказ. Пожалуйста, оформляйте по одному счётчику.
+            </p>
+            <div class="form__button">
+              <button type="submit">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Форма -->
+    </main>
+  </body>
+</html>

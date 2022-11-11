@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: rgb(14, 12, 109) url(./images/фон.png) no-repeat fixed center;
+  background-size: cover;
+  background-position: center;
+}
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+
+/* Шапка */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh 3vw;
+}
+
+.logo,
+.whats-up-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  display: inline-block;
+  width: 78px;
+  height: 78px;
+  margin-right: 1vw;
+}
+
+.logo h2,
+.whats-up-number a {
+  font-size: 40px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.whats-up-number p {
+  white-space: nowrap;
+  display: inline-block;
+  margin-right: 3vw;
+}
+
+.whats-up-number .fa-brands {
+  color: white;
+  font-size: 49px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Шапка */
+
+/* Информация для клиента */
+
+.main{
+  position: relative;
+}
+
+.price {
+  color: #fff;
+  padding: 8vh 3vw;
+  background: url("./images/header1\ 1.png") no-repeat;
+  background-size: 58%;
+  background-position: 80% top;
+}
+
+.price__about h1,
+.price__cost h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 26px;
+  font-weight: 400;
+}
+
+.price__about h1 span {
+  font-size: 60px;
+  font-weight: 600;
+  color: #feda00;
+}
+
+.price__cost h1 {
+  color: #feda00;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.price__cost h1 span {
+  font-size: 60px;
+  font-weight: 800;
+  color: #feda00;
+}
+
+.price__about p {
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.price__cost {
+  margin-left: 6vw;
+}
+
+.price__text {
+  padding-top: 5vh;
+}
+
+.price__text p {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Информация для клиента */
+
+/* Расценки */
+
+.price__cost {
+  margin-top: 48px;
+}
+
+.price__cost h3 {
+  font-size: 40px;
+  color: #feda00;
+}
+
+.price__cost p {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+/* Расценки */
+
+/* Форма */
+
+.form{
+  position: relative;
+}
+
+.form h3 {
+  text-align: center;
+}
+
+.form h3 {
+  font-weight: 600;
+  font-size: 25px;
+  color: #feda00;
+}
+
+.form__content{
+  position: relative;
+}
+
+.form__content__label {
+  background: linear-gradient(
+    160.25deg,
+    rgba(255, 255, 255, 0.43) -33.78%,
+    rgba(255, 255, 255, 0) 113.92%
+  );
+  border: 2px solid #feda00;
+  box-shadow: -5px 19px 66px -2px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  border-radius: 40px;
+  width: 40%;
+  margin: 4vh auto;
+  padding: 3vh 7vw;
+  position: relative;
+  z-index: 0;
+}
+
+.form__content__label label,
+.form__content__label p,
+.form__content__label span {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.form__content__label p span {
+  color: #feda00;
+  display: inline-block;
+}
+
+.form__content__label input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #5f7899;
+  color: #fff;
+  display: inline-block;
+}
+
+input[type="radio"] {
+  opacity: 0;
+}
+
+.radio-input label {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+.radio + label::before {
+  content: " ";
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.radio + label:hover::before {
+  border: 0.5rem solid white;
+}
+
+.radio:checked + label::before {
+  border: 0.5rem solid #184681;
+}
+
+.form__nessesary {
+  width: 35%;
+  margin: 3vh auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.form__nessesary p {
+  color: #fff;
+  line-height: 35px;
+}
+
+.form__nessesary h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: 30px;
+}
+
+.form__button {
+  width: 100%;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form__button button {
+  background: #feda00;
+  box-shadow: -5px 19px 66px -2px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  border-radius: 30px;
+  padding: 40px 60px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+  color: #02214c;
+  height: 70px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.form__button button:hover{
+  color: #feda00  ;
+  background-color: #02214c;
+}
+
+.form__content__label img{
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  max-height: 110%;
+}
